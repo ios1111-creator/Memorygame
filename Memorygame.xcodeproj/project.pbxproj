@@ -14,6 +14,7 @@
 		66639C2624B3CF5800EC0E71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66639C2424B3CF5800EC0E71 /* LaunchScreen.storyboard */; };
 		66639C3124B3CF5800EC0E71 /* MemorygameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66639C3024B3CF5800EC0E71 /* MemorygameTests.swift */; };
 		66639C3C24B3CF5800EC0E71 /* MemorygameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66639C3B24B3CF5800EC0E71 /* MemorygameUITests.swift */; };
+		66CB5CAA24B3D6C300D450D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CB5CA824B3D6C300D450D5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		66639C3724B3CF5800EC0E71 /* MemorygameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorygameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66639C3B24B3CF5800EC0E71 /* MemorygameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorygameUITests.swift; sourceTree = "<group>"; };
 		66639C3D24B3CF5800EC0E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CB5CA924B3D6C300D450D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/Concentration-336af416943a168a517740547592a2d7c6c2ba6c/Concentration/Concentration/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		66639C1824B3CF4300EC0E71 /* Memorygame */ = {
 			isa = PBXGroup;
 			children = (
+				66CB5CA824B3D6C300D450D5 /* Main.storyboard */,
 				66639C1924B3CF4300EC0E71 /* AppDelegate.swift */,
 				66639C1D24B3CF4300EC0E71 /* ViewController.swift */,
 				66639C1F24B3CF5800EC0E71 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				66639C2624B3CF5800EC0E71 /* LaunchScreen.storyboard in Resources */,
 				66639C2324B3CF5800EC0E71 /* Preview Assets.xcassets in Resources */,
 				66639C2024B3CF5800EC0E71 /* Assets.xcassets in Resources */,
+				66CB5CAA24B3D6C300D450D5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +311,14 @@
 				66639C2524B3CF5800EC0E71 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		66CB5CA824B3D6C300D450D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66CB5CA924B3D6C300D450D5 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
