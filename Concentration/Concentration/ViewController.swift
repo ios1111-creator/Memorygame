@@ -25,14 +25,50 @@ class ViewController: UIViewController {
         scoreCount = game.score
         if let cardNumber = cardButtons.index(of: sender){
             if !game.cards[cardNumber].isMatched { flipCount += 1 }
+            
             game.chooseCard(at: cardNumber)
-            updateViewFromModel()
+           updateViewFromModel()
         }else {
             print("card is not in cardButton array")
         }
     }
     
-    @IBAction func touchNewGame(_ sender: UIButton) {
+   //ar timer : Timer?
+    @IBOutlet weak var timerLabel: UILabel!
+    /*var milliseconds: Float = 30 * 1000 // 30 sec
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+                timer = Timer.scheduledTimer(timeInterval: 0.001, target: self, selector: #selector(timerElapsed), userInfo: nil, repeats: true)
+        RunLoop.main.add(timer!, forMode: .commonModes )   }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    
+    //Mark : Timer Mathods
+    @objc func timerElapsed(){
+        
+        milliseconds -= 1
+        
+       let seconds = String(format:"%.2f", milliseconds/1000)
+      
+        timerLabel.text = "time Remaining: \(seconds)"
+        
+        if milliseconds <= 0 {
+            
+            timer?.invalidate()
+            timerLabel.textColor = UIColor.red
+            
+           
+        }
+    */
+    
+    
+        func touchNewGame(_ sender: UIButton) {
         // reset game
         game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
         // reset theme choices
@@ -56,9 +92,9 @@ class ViewController: UIViewController {
             }
         }
     }
-    var theme = Theme()
+        let theme = Theme()
     
-    lazy var emojiChoices = theme.getRandomThemeIcons()
+       lazy var emojiChoices = theme.getRandomThemeIcons()
 
     var emoji = [Int: String]()
 
@@ -70,4 +106,5 @@ class ViewController: UIViewController {
         return emoji[card.identifier] ?? "?"
     }
 }
+
 

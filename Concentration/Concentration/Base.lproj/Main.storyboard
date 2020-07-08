@@ -282,6 +282,13 @@
                                     <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHf-yv-RKo"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXf-pA-bRb">
+                                <rect key="frame" x="104" y="11" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -289,6 +296,7 @@
                     <connections>
                         <outlet property="flipCountLabel" destination="EJd-53-j16" id="WKT-iM-M5d"/>
                         <outlet property="scoreCountLabel" destination="dDh-me-JCE" id="RLT-t3-CoT"/>
+                        <outlet property="timerLabel" destination="KXf-pA-bRb" id="cAg-wS-Njq"/>
                         <outletCollection property="cardButtons" destination="WP6-3b-UTW" collectionClass="NSMutableArray" id="hJK-Cv-bEW"/>
                         <outletCollection property="cardButtons" destination="Dek-wb-PW1" collectionClass="NSMutableArray" id="Q7V-QL-bTJ"/>
                         <outletCollection property="cardButtons" destination="Cf5-QO-SX6" collectionClass="NSMutableArray" id="X5a-CA-OsF"/>
