@@ -33,9 +33,9 @@ class ViewController: UIViewController {
         }
     }
     
-   //ar timer : Timer?
+   var timer : Timer?
     @IBOutlet weak var timerLabel: UILabel!
-    /*var milliseconds: Float = 30 * 1000 // 30 sec
+    var milliseconds: Float = 30 * 1000 // 30 sec
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,13 +62,13 @@ class ViewController: UIViewController {
             
             timer?.invalidate()
             timerLabel.textColor = UIColor.red
-            
+            updateViewFromModel()
            
         }
-    */
+    }
     
     
-        func touchNewGame(_ sender: UIButton) {
+       @IBAction func touchNewGame(_ sender: UIButton) {
         // reset game
         game = Concentration(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
         // reset theme choices
